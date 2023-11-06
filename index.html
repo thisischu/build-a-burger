@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <main>
+      <form aria-labelledby="Form for building burgers">
+        <h1>Build A Burger!</h1>
+
+        <section aria-labelledby="Burger name">
+          <label for="burger-name">Insert Burger Name:</label>
+          <input type="text" name="burger-name" id="burger-name">
+        </section>
+
+        <section aria-labelledby="Bun selection">
+          <label for="burger-buns">Choose a Bun:</label>
+          <select id="burger-buns" name="burger-buns">
+            <option value="Classic">Classic</option>
+            <option value="Bagel">Bagel</option>
+            <option value="Hero">Hero</option>
+            <option value="Roll">Roll</option>
+            <option value="Rat">Rat</option>
+          </select>
+        </section>
+
+        <section aria-labelledby="Meat Selection">
+          <p>Select a Meat: </p>
+          <input type="radio" name="beef" id="beef">
+          <label for="beef">Beef</label>
+
+          <input type="radio" name="Turkey" id="Turkey">
+          <label for="Turkey">Turkey</label>
+
+          <input type="radio" name="Chicken" id="Chicken">
+          <label for="Chicken">Chicken</label>
+
+          <input type="radio" name="Fish" id="Fish">
+          <label for="Fish">Fish</label>
+
+          <input type="radio" name="Rat" id="Rat">
+          <label for="Rat">Rat</label>
+        </section>
+
+        <section >
+          <p>Select your topping(s):</p>
+          <input type="checkbox" name="Cheese" id="Cheese">
+          <label for="Cheese">Cheese</label>
+
+          <input type="checkbox" name="Lettuce" id="Lettuce">
+          <label for="Lettuce">Lettuce</label>
+
+          <input type="checkbox" name="Tomato" id="Tomato">
+          <label for="Tomato">Tomato</label>
+
+          <input type="checkbox" name="Onion" id="Onion">
+          <label for="Onion">Onion</label>
+
+          <input type="checkbox" name="Bacon" id="Bacon">
+          <label for="Bacon">Bacon</label>
+        </section>
+
+        <section>
+          <p>Select </p>
+          <input type="checkbox" name="Bacon" id="Bacon">
+          <label for="Bacon">Bacon</label>
+        </section>
+      </form>
+    </main>
+
+    <div id="app"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
