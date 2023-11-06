@@ -14,3 +14,21 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  text-align: center;
+}
+
+#form-container{
+  display: flex;
+  justify-content: center;
+}
+
+#Burger-form {
+  background-color: rgb(57, 57, 57);
+  width: 450px;
+}
+
+.Burger-section {
+  padding-bottom: 10px;
+}
+

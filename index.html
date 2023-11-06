@@ -9,67 +9,87 @@
   </head>
   <body>
     <main>
-      <form aria-labelledby="Form for building burgers">
-        <h1>Build A Burger!</h1>
+      <section id="form-container">
+        <form id="Burger-form" aria-labelledby="Form for building burgers">
+          <h1 id="Form-title">Build A Burger!</h1>
+          <section class="Burger-section" aria-labelledby="Burger name">
+            <label for="burger-name">Insert Burger Name:</label>
+            <input type="text" name="burger-name" id="burger-name" required>
+          </section>
+          <section class="Burger-section" aria-labelledby="Bun selection">
+            <label for="burger-buns">Choose a Bun:</label>
+            <select id="burger-buns" name="burger-buns" required>
+              <option value="Classic">Classic</option>
+              <option value="Bagel">Bagel</option>
+              <option value="Hero">Hero</option>
+              <option value="Roll">Roll</option>
+              <option value="Rat">Rat</option>
+            </select>
+          </section>
+          <section class="Burger-section" aria-labelledby="Meat Selection">
+            <fieldset required>
+              <legend>Select a Meat: </legend>
+              <input type="radio" name="beef" id="beef">
+              <label for="beef">Beef</label>
+              <input type="radio" name="Turkey" id="Turkey">
+              <label for="Turkey">Turkey</label>
+              <input type="radio" name="Chicken" id="Chicken">
+              <label for="Chicken">Chicken</label>
+              <input type="radio" name="Fish" id="Fish">
+              <label for="Fish">Fish</label>
+              <input type="radio" name="Rat" id="Rat">
+              <label for="Rat">Rat</label>
+            </fieldset>
+          </section>
+          <section class="Burger-section" aria-labelledby="Topping Selection">
+            <fieldset required>
+              <legend>Select your topping(s):</legend>
+              <input type="checkbox" name="Cheese" id="Cheese">
+              <label for="Cheese">Cheese</label>
+              <input type="checkbox" name="Lettuce" id="Lettuce">
+              <label for="Lettuce">Lettuce</label>
+              <input type="checkbox" name="Tomato" id="Tomato">
+              <label for="Tomato">Tomato</label>
+              <input type="checkbox" name="Onion" id="Onion">
+              <label for="Onion">Onion</label>
+              <input type="checkbox" name="Bacon" id="Bacon">
+              <label for="Bacon">Bacon</label>
+            </fieldset>
+          </section>
+          <section class="Burger-section" aria-labelledby="Sauce Selection">
+            <fieldset required>
+              <legend>Select your sauce(s):</legend>
+              <input type="checkbox" name="Mayo" id="Mayo">
+              <label for="Mayo">Mayo</label>
+              <input type="checkbox" name="Ketchup" id="Ketchup">
+              <label for="Ketchup">Ketchup</label>
+              <input type="checkbox" name="BBQ" id="BBQ">
+              <label for="BBQ">BBQ</label>
+              <input type="checkbox" name="Hotsauce" id="Hotsauce">
+              <label for="Hotsauce">Hotsauce</label>
+              <input type="checkbox" name="Bacon-Grease" id="Bacon-Grease">
+              <label for="Bacon-Grease">Bacon Grease</label>
+            </fieldset>
+          </section>
+          <section class="Burger-section" aria-labelledby="Gold Flakes">
+            <fieldset required>
+              <legend>Add gold flakes?:</legend>
+              <input type="radio" name="Yes-Gold" id="Yes-Gold">
+              <label for="Yes-Gold">Yes</label>
+              <input type="radio" name="No-Gold" id="No-Gold">
+              <label for="No-Gold">No</label>
+            </fieldset>
+          </section>
+          <section class="Burger-section" aria-labelledby="Comments">
+            <label for="Comments">Comments:</label>
+            <input type="text" name="Comments" id="Comments">
+          </section>
 
-        <section aria-labelledby="Burger name">
-          <label for="burger-name">Insert Burger Name:</label>
-          <input type="text" name="burger-name" id="burger-name">
-        </section>
-
-        <section aria-labelledby="Bun selection">
-          <label for="burger-buns">Choose a Bun:</label>
-          <select id="burger-buns" name="burger-buns">
-            <option value="Classic">Classic</option>
-            <option value="Bagel">Bagel</option>
-            <option value="Hero">Hero</option>
-            <option value="Roll">Roll</option>
-            <option value="Rat">Rat</option>
-          </select>
-        </section>
-
-        <section aria-labelledby="Meat Selection">
-          <p>Select a Meat: </p>
-          <input type="radio" name="beef" id="beef">
-          <label for="beef">Beef</label>
-
-          <input type="radio" name="Turkey" id="Turkey">
-          <label for="Turkey">Turkey</label>
-
-          <input type="radio" name="Chicken" id="Chicken">
-          <label for="Chicken">Chicken</label>
-
-          <input type="radio" name="Fish" id="Fish">
-          <label for="Fish">Fish</label>
-
-          <input type="radio" name="Rat" id="Rat">
-          <label for="Rat">Rat</label>
-        </section>
-
-        <section >
-          <p>Select your topping(s):</p>
-          <input type="checkbox" name="Cheese" id="Cheese">
-          <label for="Cheese">Cheese</label>
-
-          <input type="checkbox" name="Lettuce" id="Lettuce">
-          <label for="Lettuce">Lettuce</label>
-
-          <input type="checkbox" name="Tomato" id="Tomato">
-          <label for="Tomato">Tomato</label>
-
-          <input type="checkbox" name="Onion" id="Onion">
-          <label for="Onion">Onion</label>
-
-          <input type="checkbox" name="Bacon" id="Bacon">
-          <label for="Bacon">Bacon</label>
-        </section>
-
-        <section>
-          <p>Select </p>
-          <input type="checkbox" name="Bacon" id="Bacon">
-          <label for="Bacon">Bacon</label>
-        </section>
-      </form>
+          <section class="Burger-section">
+            <button type="submit">Assemble</button>
+          </section>
+        </form>
+      </section>
     </main>
 
     <div id="app"></div>
